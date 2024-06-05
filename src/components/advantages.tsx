@@ -41,7 +41,7 @@ const Advantages = () => {
           <Image
             src={circles}
             alt="circles"
-            className="hidden md:flex absolute top-10 left-[-10px] z-[-10]  lg:top-24 lg:left-[-10]"
+            className="hidden md:flex absolute top-10 left-[-10px] z-[-10]  lg:top-24 lg:left-[-10] dark:invert"
           />
           <Gradient className="absolute bottom-0 left-[10px] hidden md:flex z-[-20] lg:bottom-8 lg:left-[10px]" />
         </div>
@@ -52,7 +52,7 @@ const Advantages = () => {
           <Image
             src={circles}
             alt="circles"
-            className="hidden md:flex absolute top-10 left-[-10px] z-[-10]  lg:top-24 lg:left-[-10]"
+            className="hidden md:flex absolute top-10 left-[-10px] z-[-10]  lg:top-24 lg:left-[-10] dark:invert"
           />
           <Gradient className="absolute bottom-0 left-0 hidden md:flex z-[-20] lg:bottom-8 lg:left-[-10]" />
         </div>

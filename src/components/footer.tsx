@@ -43,11 +43,11 @@ const Footer = () => {
                           <div className=" flex">
                             <input
                               placeholder="Your email"
-                              className=" bg-white/60 w-full  h-fit border dark:border-white lg:py-[11px] lg:px-4 py-[7px] px-2 dark:placeholder:text-white"
+                              className=" bg-white/60 w-full  h-fit border  lg:py-[11px] lg:px-4 py-[7px] px-2 dark:placeholder:text-black dark:bg-white"
                             />
                             <Button
                               variant={"primary"}
-                              className=" lg:py-6 lg:px-4 py-4 px-2  lg:text-base text-xs rounded-none"
+                              className=" lg:py-6 lg:px-4 py-4 px-2  lg:text-base text-xs rounded-none dark:border dark:lg:py-[23px] dark:bg-primary dark:text-white dark:py-[15px]"
                             >
                               Subscribe
                             </Button>

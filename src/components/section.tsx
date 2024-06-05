@@ -16,7 +16,7 @@ const Section = () => {
           <Image
             src={circles}
             alt="circles"
-            className="absolute top-16 -left-10 z-[-10]"
+            className="absolute top-16 -left-10 z-[-10] dark:invert"
           />
           <Gradient className="absolute top-16 left-[-120px] md:flex hidden z-[-20]" />
           <Image src={mobiles} alt="mobiles" className=" hidden md:flex" />

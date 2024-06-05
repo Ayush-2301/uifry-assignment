@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       {/* <Star className=" absolute top-[50px] right-[5px] rotate-45" /> */}
-      <Gradient className=" overflow-hidden z-[-20] absolute right-0 md:left-[10%] top-[10%]" />
+      <Gradient className=" overflow-hidden z-[-20] absolute right-0 md:left-[10%] top-[10%] dark:top-[40%]" />
       <Hero />
       <Section />
       <Advantages />

@@ -43,7 +43,7 @@ const Hero = () => {
             alt="stat image"
             width={500}
             height={500}
-            className="md:w-full w-[400px] object-cover dark:invert "
+            className="md:w-full w-[400px] object-cover  "
           />
         </div>
       </div>
