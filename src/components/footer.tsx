@@ -40,7 +40,7 @@ const Footer = () => {
                       </Link>
                       {fidx === footerData.length - 1 &&
                         lidx === item.links.length - 1 && (
-                          <div className=" flex">
+                          <div className=" flex mt-2">
                             <input
                               placeholder="Your email"
                               className=" bg-white/60 w-full  h-fit border  lg:py-[11px] lg:px-4 py-[7px] px-2 dark:placeholder:text-black dark:bg-white"

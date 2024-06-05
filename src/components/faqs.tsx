@@ -1,25 +1,69 @@
+"use client";
 import React from "react";
 import { faqsData } from "@/constant";
 import { cn } from "@/lib/utils";
 import Star from "./star";
+import { motion } from "framer-motion";
 
 const FAQs = () => {
+  const demoVariants = {
+    initial: {
+      opacity: 0,
+      y: -50,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 0.09 * index,
+        duration: 0.2,
+        ease: "easeOut",
+      },
+    }),
+  };
   return (
     <div className="flex flex-col mt-16 relative">
       <Star
         className=" absolute top-0 left-[-100px] rotate-[60deg] scale-[0.6] "
         type="light"
       />
-      <p className="text-lg text-primary font-medium">FAQ</p>
-      <h1 className="text-3xl md:text-5xl max-w-[500px] w-full font-semibold">
+      <motion.p
+        variants={demoVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+        custom={1}
+        className="text-lg text-primary font-medium"
+      >
+        FAQ
+      </motion.p>
+      <motion.h1
+        variants={demoVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+        custom={2}
+        className="text-3xl md:text-5xl max-w-[500px] w-full font-semibold"
+      >
         Frequently Asked Questions
-      </h1>
+      </motion.h1>
       <div className="  grid-cols-2 gap-4 mt-4 hidden md:grid">
         {faqsData.map((faq, i) => {
           const isOddRow = Math.floor(i / 2) % 2 === 0;
           const isFirstElement = i % 2 === 0;
           return (
-            <div
+            <motion.div
+              variants={demoVariants}
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              custom={i + 2}
               key={faq.id}
               className={cn(
                 isOddRow
@@ -36,7 +80,7 @@ const FAQs = () => {
               <p className="text-justify md:text-lg text-base">
                 {faq.description}
               </p>
-            </div>
+            </motion.div>
           );
         })}
       </div>
